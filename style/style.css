@@ -69,6 +69,14 @@ h2 {
     width: 32rem;
     text-align: center;
     margin-bottom: 1rem;
+    background-color: rgb(29, 26, 26);
+    transition: background-color 2s ease-in-out;
+    background-image: linear-gradient(rgba(29,26,26), rgba(255,255,255,0));
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: purple;
 }
 
 .neonText {
@@ -93,7 +101,7 @@ h2 {
                     0 0 2rem #bc13fe,
                     0 0 0.8rem #bc13fe,
                     0 0 2.8rem #bc13fe,
-                    inset 0 0 1.3rem #bc13fe; 
+                    inset 0 0 1.3rem #bc13fe;
 }
 
 @keyframes pulsate {
