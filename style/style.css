@@ -70,13 +70,13 @@ h2 {
     text-align: center;
     margin-bottom: 1rem;
     background-color: rgb(29, 26, 26);
-    transition: background-color 2s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
     background-image: linear-gradient(rgba(29,26,26), rgba(255,255,255,0));
 }
 
 .btn:hover{
     cursor: pointer;
-    background-color: purple;
+    background-color: #bc13fe;
 }
 
 .neonText {
