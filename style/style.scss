@@ -71,7 +71,7 @@ h2 {
     margin-bottom: 1rem;
     background-color: rgb(29, 26, 26);
     transition: background-color 1.5s ease-in-out;
-    background-image: linear-gradient(rgba(29,26,26), rgba(255,255,255,0));
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
 
     &:hover{
         cursor: pointer;
