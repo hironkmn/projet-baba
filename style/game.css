@@ -1,10 +1,13 @@
 body {
-    color: #fff;
+  color: #fff;
 }
 
 .choice-container {
-    display: flex;
-    margin-bottom: 0.8rem;
-    width: 100%;
-    border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  border-radius: 4px;
 }
+/*# sourceMappingURL=game.css.map */
