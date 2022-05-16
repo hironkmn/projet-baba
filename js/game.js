@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'Quel est le résultat de 2 + 2 ?',
+        question: 'Quel est le résultat de 2 + 3 ?',
         choice1: '2',
         choice2: '4',
         choice3: '8',
