@@ -194,7 +194,7 @@ body {
 }
 
 .row .column {
-  width: 400px;
+  width: 600px;
   height: 100px;
   display: inline-block;
   font-size: 32px;
@@ -216,6 +216,8 @@ body {
   transition: -webkit-box-shadow 1s;
   transition: box-shadow 1s;
   transition: box-shadow 1s, -webkit-box-shadow 1s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
 }
 
 #batgirl:hover {
@@ -235,6 +237,8 @@ body {
   transition: -webkit-box-shadow 1s;
   transition: box-shadow 1s;
   transition: box-shadow 1s, -webkit-box-shadow 1s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
 }
 
 #red-hood:hover {
@@ -254,6 +258,8 @@ body {
   transition: -webkit-box-shadow 1s;
   transition: box-shadow 1s;
   transition: box-shadow 1s, -webkit-box-shadow 1s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
 }
 
 #nightwing:hover {
@@ -273,6 +279,8 @@ body {
   transition: -webkit-box-shadow 1s;
   transition: box-shadow 1s;
   transition: box-shadow 1s, -webkit-box-shadow 1s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
 }
 
 #robin:hover {
@@ -280,6 +288,58 @@ body {
           box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 2.8rem #1ce46b, inset 0 0 1.3rem #1ce46b;
   -webkit-animation: pulsate-robin 1.5s infinite alternate;
           animation: pulsate-robin 1.5s infinite alternate;
+}
+
+.correct-batgirl {
+  background-color: #ffcd00;
+}
+
+.correct-red {
+  background-color: #f8101d;
+}
+
+.correct-nightwing {
+  background-color: #06c9f5;
+}
+
+.correc-robin {
+  background-color: #1ce46b;
+}
+
+/* HUD */
+#hud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 3rem;
+  border: 0.2rem solid white;
+  margin-top: 2rem;
+  border-radius: 50px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #d1c750, 0 0 0.8rem #d1c750, 0 0 2.8rem #d1c750, inset 0 0 1.3rem #d1c750;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #d1c750, 0 0 0.8rem #d1c750, 0 0 2.8rem #d1c750, inset 0 0 1.3rem #d1c750;
+}
+
+#progressBarFull {
+  height: 100%;
+  background: #d1c750;
+  width: 0%;
 }
 
 @-webkit-keyframes pulsate-robin {
@@ -351,6 +411,12 @@ body {
   }
   0% {
     text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #ffcd00, 0 0 45px #ffcd00, 0 0 55px #ffcd00, 0 0 70px #ffcd00, 0 0 80px #ffcd00;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .choice-container {
+    min-width: 40rem;
   }
 }
 /*# sourceMappingURL=game.css.map */
