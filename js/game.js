@@ -86,9 +86,20 @@ choices.forEach(choice => {
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
         }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
         setTimeout(() => {
-            selectedChoice.parentElement.classList.add(classToApply)
+            selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
         }, 1000)
     })
 })
+
+
+incrementScore = num => {
+    score +=num
+    scoreText.innertText = score
+}
+
+startGame()
