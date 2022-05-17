@@ -12,28 +12,37 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'Quel est le résultat de 2 + 2 ?',
+        question: 'What is 2 + 2?',
         choice1: '2',
         choice2: '4',
-        choice3: '8',
-        choice4: '112',
+        choice3: '21',
+        choice4: '17',
         answer: 2,
     },
     {
-        question: 'Qui est mort à la fin de Endgame ?',
-        choice1: 'Captain America',
-        choice2: 'Bruce Banner',
-        choice3: 'Iron Man',
-        choice4: 'Dark Vador',
+        question:
+            "The tallest building in the world is located in which city?",
+        choice1: "Dubai",
+        choice2: "New York",
+        choice3: "Shanghai",
+        choice4: "None of the above",
+        answer: 1,
+    },
+    {
+        question: "What percent of American adults believe that chocolate milk comes from brown cows?",
+        choice1: "20%",
+        choice2: "18%",
+        choice3: "7%",
+        choice4: "33%",
         answer: 3,
     },
     {
-        question: 'Quel jeu permet de changer les parties intimes de son personnage ?',
-        choice1: 'Battlefield 3',
-        choice2: 'Sonic Colors Ultimate',
-        choice3: 'Naruto: Ultimate Ninja Storm',
-        choice4: 'Cyberpunk 2077',
-        answer: 4,
+        question: "Approximately what percent of U.S. power outages are caused by squirrels?",
+        choice1: "10-20%",
+        choice2: "5-10%",
+        choice3: "15-20%",
+        choice4: "30%-40%",
+        answer: 1,
     }
 ]
 
@@ -48,7 +57,7 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
+    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('/end.html')
@@ -56,19 +65,19 @@ getNewQuestion = () => {
 
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
-
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
+    
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
-    
+
     choices.forEach(choice => {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
     })
 
     availableQuestions.splice(questionsIndex, 1)
-    
+
     acceptingAnswers = true
 }
 
@@ -80,8 +89,7 @@ choices.forEach(choice => {
         const selectedChoice = e.target
         const selectedAnswer = selectedChoice.dataset['number']
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
-        'incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
@@ -92,14 +100,14 @@ choices.forEach(choice => {
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
+
         }, 1000)
     })
 })
 
-
 incrementScore = num => {
     score +=num
-    scoreText.innertText = score
+    scoreText.innerText = score
 }
 
 startGame()
