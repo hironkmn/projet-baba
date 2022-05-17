@@ -206,104 +206,12 @@ body {
   cursor: pointer;
 }
 
-#batgirl {
-  border: solid 5px #ffcd00;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+.correct {
+  background-color: #bc13fe;
 }
 
-#batgirl:hover {
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 2.8rem #ffcd00, inset 0 0 1.3rem #ffcd00;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 2.8rem #ffcd00, inset 0 0 1.3rem #ffcd00;
-  -webkit-animation: pulsate-batgirl 1.5s infinite alternate;
-          animation: pulsate-batgirl 1.5s infinite alternate;
-}
-
-#red-hood {
-  border: solid 5px #f8101d;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-}
-
-#red-hood:hover {
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f8101d, 0 0 0.8rem #f8101d, 0 0 2.8rem #f8101d, inset 0 0 1.3rem #f8101d;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f8101d, 0 0 0.8rem #f8101d, 0 0 2.8rem #f8101d, inset 0 0 1.3rem #f8101d;
-  -webkit-animation: pulsate-red-hood 1.5s infinite alternate;
-          animation: pulsate-red-hood 1.5s infinite alternate;
-}
-
-#nightwing {
-  border: solid 5px #06c9f5;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-}
-
-#nightwing:hover {
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 2.8rem #06c9f5, inset 0 0 1.3rem #06c9f5;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 2.8rem #06c9f5, inset 0 0 1.3rem #06c9f5;
-  -webkit-animation: pulsate-nightwing 1.5s infinite alternate;
-          animation: pulsate-nightwing 1.5s infinite alternate;
-}
-
-#robin {
-  border: solid 5px #1ce46b;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-}
-
-#robin:hover {
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 2.8rem #1ce46b, inset 0 0 1.3rem #1ce46b;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 2.8rem #1ce46b, inset 0 0 1.3rem #1ce46b;
-  -webkit-animation: pulsate-robin 1.5s infinite alternate;
-          animation: pulsate-robin 1.5s infinite alternate;
-}
-
-.correct-batgirl {
-  background-color: #ffcd00;
-}
-
-.correct-red {
-  background-color: #f8101d;
-}
-
-.correct-nightwing {
-  background-color: #06c9f5;
-}
-
-.correc-robin {
-  background-color: #1ce46b;
+.incorrect {
+  background-color: #925933;
 }
 
 /* HUD */
