@@ -23,11 +23,52 @@ body {
     }
 }
 
-.correct {
-    background-color: #bc13fe;
+#batgirl {
+    border: solid 5px rgb(255, 205, 0);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    transition: box-shadow 1s;
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
 }
 
-.incorrect {
+#red-hood {
+    border: solid 5px rgb(248, 16, 29);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    transition: box-shadow 1s;
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+}
+
+#nightwing {
+    border: solid 5px rgb(6, 201, 245);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    transition: box-shadow 1s;
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));    
+
+}
+
+#robin {
+    border: solid 5px rgb(28, 228, 107);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    transition: box-shadow 1s;
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+}
+
+.correct {
+    background-color: #bc13fe
+}
+
+.incorrect{
     background-color: rgb(146, 89, 51);
 }
 
@@ -68,6 +109,129 @@ body {
     width: 0%;
 }
 
+@keyframes pulsate-robin {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(28, 228, 107),
+        0 0 80px rgb(28, 228, 107),
+        0 0 90px rgb(28, 228, 107),
+        0 0 100px rgb(28, 228, 107),
+        0 0 150px rgb(28, 228, 107);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(28, 228, 107),
+      0 0 45px rgb(28, 228, 107),
+      0 0 55px rgb(28, 228, 107),
+      0 0 70px rgb(28, 228, 107),
+      0 0 80px rgb(28, 228, 107);
+  
+  }
+}
+
+@keyframes pulsate-nightwing {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(6, 201, 245),
+        0 0 80px rgb(6, 201, 245),
+        0 0 90px rgb(6, 201, 245),
+        0 0 100px rgb(6, 201, 245),
+        0 0 150px rgb(6, 201, 245);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(6, 201, 245),
+      0 0 45px rgb(6, 201, 245),
+      0 0 55px rgb(6, 201, 245),
+      0 0 70px rgb(6, 201, 245),
+      0 0 80px rgb(6, 201, 245);
+  
+  }
+}
+
+@keyframes pulsate-red-hood {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(248, 16, 29),
+        0 0 80px rgb(248, 16, 29),
+        0 0 90px rgb(248, 16, 29),
+        0 0 100px rgb(248, 16, 29),
+        0 0 150px rgb(248, 16, 29);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(248, 16, 29),
+      0 0 45px rgb(248, 16, 29),
+      0 0 55px rgb(248, 16, 29),
+      0 0 70px rgb(248, 16, 29),
+      0 0 80px rgb(248, 16, 29);
+  
+  }
+}
+
+@keyframes pulsate-batgirl {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(255, 205, 0),
+        0 0 80px rgb(255, 205, 0),
+        0 0 90px rgb(255, 205, 0),
+        0 0 100px rgb(255, 205, 0),
+        0 0 150px rgb(255, 205, 0);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(255, 205, 0),
+      0 0 45px rgb(255, 205, 0),
+      0 0 55px rgb(255, 205, 0),
+      0 0 70px rgb(255, 205, 0),
+      0 0 80px rgb(255, 205, 0);
+  
+  }
+}
 
 @media screen and (max-width: 768px) {
     .choice-container {
