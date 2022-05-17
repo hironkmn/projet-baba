@@ -23,97 +23,12 @@ body {
     }
 }
 
-#batgirl {
-    border: solid 5px rgb(255, 205, 0);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
-    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
-    &:hover{
-        box-shadow: 0 0 .2rem #fff,
-                    0 0 .2rem #fff,
-                    0 0 2rem rgb(255, 205, 0),
-                    0 0 0.8rem rgb(255, 205, 0),
-                    0 0 2.8rem rgb(255, 205, 0),
-                    inset 0 0 1.3rem rgb(255, 205, 0);
-        animation: pulsate-batgirl 1.5s infinite alternate;
-    }
+.correct {
+    background-color: #bc13fe;
 }
 
-#red-hood {
-    border: solid 5px rgb(248, 16, 29);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
-    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
-    &:hover{
-        box-shadow: 0 0 .2rem #fff,
-                    0 0 .2rem #fff,
-                    0 0 2rem rgb(248, 16, 29),
-                    0 0 0.8rem rgb(248, 16, 29),
-                    0 0 2.8rem rgb(248, 16, 29),
-                    inset 0 0 1.3rem rgb(248, 16, 29);
-        animation: pulsate-red-hood 1.5s infinite alternate;
-    }
-}
-
-#nightwing {
-    border: solid 5px rgb(6, 201, 245);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
-    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));    
-    &:hover{
-        box-shadow: 0 0 .2rem #fff,
-                    0 0 .2rem #fff,
-                    0 0 2rem rgb(6, 201, 245),
-                    0 0 0.8rem rgb(6, 201, 245),
-                    0 0 2.8rem rgb(6, 201, 245),
-                    inset 0 0 1.3rem rgb(6, 201, 245);
-        animation: pulsate-nightwing 1.5s infinite alternate;
-    }
-}
-
-#robin {
-    border: solid 5px rgb(28, 228, 107);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
-    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
-
-    &:hover{
-        box-shadow: 0 0 .2rem #fff,
-                    0 0 .2rem #fff,
-                    0 0 2rem rgb(28, 228, 107),
-                    0 0 0.8rem rgb(28, 228, 107),
-                    0 0 2.8rem rgb(28, 228, 107),
-                    inset 0 0 1.3rem rgb(28, 228, 107);
-        animation: pulsate-robin 1.5s infinite alternate;
-    }
-}
-
-.correct-batgirl {
-    background-color: rgb(255, 205, 0);
-}
-
-.correct-red {
-    background-color: rgb(248, 16, 29);
-}
-
-.correct-nightwing{
-    background-color: rgb(6, 201, 245);
-}
-
-.correc-robin{
-    background-color: rgb(28, 228, 107);
+.incorrect {
+    background-color: rgb(146, 89, 51);
 }
 
 /* HUD */
