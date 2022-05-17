@@ -1,117 +1,155 @@
 @import "loader";
 
-*{
-    font-family: 'Merriweather', serif;
-}
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+  }
+  
+  :root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+  }
+  
+  body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 26, 26);
+  }
+  
+  .container {
+    border: solid 3px white;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 .2rem #fff,
+                    0 0 .2rem #fff,
+                    0 0 2rem #bc13fe,
+                    0 0 0.8rem #bc13fe,
+                    0 0 2.8rem #bc13fe,
+                    inset 0 0 1.3rem #bc13fe;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: rgb(29, 26, 26);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+  
+  #question {
+      color: white;
+      text-align: center;
+  }
 
-body {
-    color: #fff;
-}
-
-.row {
-    clear: both;  
-    .column {
-        width: 600px;
-        height: 100px;
-        display: inline-block;
-        font-size: 32px;
-        margin-top: 20px;
-        margin-left: 20px;
-        background-color: rgba(29,26,26,1);
-        &:hover{
-            cursor: pointer;
-        }
-    }
-}
+  .btn:hover {
+    border-color: black;
+    cursor: pointer;
+  }
+  
+  .btn.correct {
+    background-color: #bc13fe;
+    color: white;
+  }
+  
+  .btn.wrong {
+    background-color: white;
+    color: white;
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
 
 #batgirl {
-    border: solid 5px rgb(255, 205, 0);
+    border: solid 2px rgb(255, 205, 0);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
     transition: box-shadow 1s;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+    box-shadow: 0 0 .2rem #fff,
+                    0 0 .2rem #fff,
+                    0 0 1rem rgb(255, 205, 0),
+                    0 0 0.8rem rgb(255, 205, 0),
+                    0 0 1.8rem rgb(255, 205, 0),
+                    inset 0 0 0.3rem rgb(255, 205, 0);
 }
 
-#red-hood {
-    border: solid 5px rgb(248, 16, 29);
+#hood {
+    border: solid 2px rgb(248, 16, 29);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
     transition: box-shadow 1s;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 1rem rgb(248, 16, 29),
+                0 0 0.8rem rgb(248, 16, 29),
+                0 0 1.8rem rgb(248, 16, 29),
+                inset 0 0 0.3rem rgb(248, 16, 29);
 }
 
 #nightwing {
-    border: solid 5px rgb(6, 201, 245);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
-    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));    
-
-}
-
-#robin {
-    border: solid 5px rgb(28, 228, 107);
+    border: solid 2px rgb(6, 201, 245);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
     transition: box-shadow 1s;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
-}
-
-.correct {
-    background-color: #bc13fe
-}
-
-.incorrect{
-    background-color: rgb(146, 89, 51);
-}
-
-/* HUD */
-
-#hud {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hud-prefix {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.hud-main-text {
-    text-align: center;
-}
-
-#progressBar {
-    width: 20rem;
-    height: 3rem;
-    border: 0.2rem solid white;
-    margin-top: 2rem;
-    border-radius: 50px;
-    overflow: hidden;
     box-shadow: 0 0 .2rem #fff,
                     0 0 .2rem #fff,
-                    0 0 2rem #d1c750,
-                    0 0 0.8rem #d1c750,
-                    0 0 2.8rem #d1c750,
-                    inset 0 0 1.3rem #d1c750;
+                    0 0 1rem rgb(6, 201, 245),
+                    0 0 0.8rem rgb(6, 201, 245),
+                    0 0 1.8rem rgb(6, 201, 245),
+                    inset 0 0 0.3rem rgb(6, 201, 245);
 }
 
-#progressBarFull {
-    height: 100%;
-    background: #d1c750;
-    width: 0%;
-}
-
-@media screen and (max-width: 768px) {
-    .choice-container {
-        min-width: 40rem;
-    }
+#robin {
+    border: solid 2px rgb(28, 228, 107);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 20px;
+    transition: box-shadow 1s;
+    background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+    box-shadow: 0 0 .2rem #fff,
+                    0 0 .2rem #fff,
+                    0 0 1rem rgb(28, 228, 107),
+                    0 0 0.8rem rgb(28, 228, 107),
+                    0 0 1.8rem rgb(28, 228, 107),
+                    inset 0 0 0.3rem rgb(28, 228, 107);
 }
