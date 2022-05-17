@@ -17,6 +17,7 @@ body {
         font-size: 32px;
         margin-top: 20px;
         margin-left: 20px;
+        background-color: rgba(29,26,26,1);
         &:hover{
             cursor: pointer;
         }
@@ -107,130 +108,6 @@ body {
     height: 100%;
     background: #d1c750;
     width: 0%;
-}
-
-@keyframes pulsate-robin {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(28, 228, 107),
-        0 0 80px rgb(28, 228, 107),
-        0 0 90px rgb(28, 228, 107),
-        0 0 100px rgb(28, 228, 107),
-        0 0 150px rgb(28, 228, 107);
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px rgb(28, 228, 107),
-      0 0 45px rgb(28, 228, 107),
-      0 0 55px rgb(28, 228, 107),
-      0 0 70px rgb(28, 228, 107),
-      0 0 80px rgb(28, 228, 107);
-  
-  }
-}
-
-@keyframes pulsate-nightwing {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(6, 201, 245),
-        0 0 80px rgb(6, 201, 245),
-        0 0 90px rgb(6, 201, 245),
-        0 0 100px rgb(6, 201, 245),
-        0 0 150px rgb(6, 201, 245);
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px rgb(6, 201, 245),
-      0 0 45px rgb(6, 201, 245),
-      0 0 55px rgb(6, 201, 245),
-      0 0 70px rgb(6, 201, 245),
-      0 0 80px rgb(6, 201, 245);
-  
-  }
-}
-
-@keyframes pulsate-red-hood {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(248, 16, 29),
-        0 0 80px rgb(248, 16, 29),
-        0 0 90px rgb(248, 16, 29),
-        0 0 100px rgb(248, 16, 29),
-        0 0 150px rgb(248, 16, 29);
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px rgb(248, 16, 29),
-      0 0 45px rgb(248, 16, 29),
-      0 0 55px rgb(248, 16, 29),
-      0 0 70px rgb(248, 16, 29),
-      0 0 80px rgb(248, 16, 29);
-  
-  }
-}
-
-@keyframes pulsate-batgirl {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(255, 205, 0),
-        0 0 80px rgb(255, 205, 0),
-        0 0 90px rgb(255, 205, 0),
-        0 0 100px rgb(255, 205, 0),
-        0 0 150px rgb(255, 205, 0);
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px rgb(255, 205, 0),
-      0 0 45px rgb(255, 205, 0),
-      0 0 55px rgb(255, 205, 0),
-      0 0 70px rgb(255, 205, 0),
-      0 0 80px rgb(255, 205, 0);
-  
-  }
 }
 
 @media screen and (max-width: 768px) {
