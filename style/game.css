@@ -238,25 +238,25 @@ body {
   padding: 5px 10px;
   color: white;
   outline: none;
+  font-size: 18px;
 }
 
 #question {
   color: white;
   text-align: center;
+  font-size: 24px;
 }
 
 .btn:hover {
-  border-color: black;
+  border-color: rgb;
   cursor: pointer;
 }
 
 .btn.correct {
-  background-color: #bc13fe;
   color: white;
 }
 
 .btn.wrong {
-  background-color: white;
   color: white;
 }
 
