@@ -96,7 +96,7 @@
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
+    transition: all 1s ease-in-out;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
     box-shadow: 0 0 .2rem #fff,
                     0 0 .2rem #fff,
@@ -104,6 +104,10 @@
                     0 0 0.8rem rgb(255, 205, 0),
                     0 0 1.8rem rgb(255, 205, 0),
                     inset 0 0 0.3rem rgb(255, 205, 0);
+
+                    &:hover{
+                      background-color: rgb(255, 205, 0);
+                    }
 }
 
 #hood {
@@ -112,7 +116,7 @@
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
+    transition: all 1s ease-in-out;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
     box-shadow: 0 0 .2rem #fff,
                 0 0 .2rem #fff,
@@ -120,6 +124,10 @@
                 0 0 0.8rem rgb(248, 16, 29),
                 0 0 1.8rem rgb(248, 16, 29),
                 inset 0 0 0.3rem rgb(248, 16, 29);
+
+                &:hover{
+                  background-color: rgb(248, 16, 29);
+                }
 }
 
 #nightwing {
@@ -128,7 +136,7 @@
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
+    transition: all 1s ease-in-out;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
     box-shadow: 0 0 .2rem #fff,
                     0 0 .2rem #fff,
@@ -136,6 +144,10 @@
                     0 0 0.8rem rgb(6, 201, 245),
                     0 0 1.8rem rgb(6, 201, 245),
                     inset 0 0 0.3rem rgb(6, 201, 245);
+
+                    &:hover{
+                      background-color: rgb(6, 201, 245);
+                    }
 }
 
 #robin {
@@ -144,7 +156,7 @@
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 20px;
-    transition: box-shadow 1s;
+    transition: all 1s ease-in-out;
     background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
     box-shadow: 0 0 .2rem #fff,
                     0 0 .2rem #fff,
@@ -152,4 +164,29 @@
                     0 0 0.8rem rgb(28, 228, 107),
                     0 0 1.8rem rgb(28, 228, 107),
                     inset 0 0 0.3rem rgb(28, 228, 107);
+                    
+                    &:hover{
+                      background-color: rgb(28, 228, 107);
+                    }
+}
+
+.owl {
+  border: solid 2px #bc13fe;
+  border-radius: 15px;
+  background-color: rgb(29, 26, 26);
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: 1s all ease-in-out;
+  background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
+  box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 1rem #bc13fe,
+                  0 0 0.8rem #bc13fe,
+                  0 0 1.8rem #bc13fe,
+                  inset 0 0 0.3rem #bc13fe;
+
+                  &:hover{
+                    background-color: #bc13fe;
+                  }
 }

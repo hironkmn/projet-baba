@@ -288,14 +288,16 @@ body {
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
   -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
           box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
+}
+
+#batgirl:hover {
+  background-color: #ffcd00;
 }
 
 #hood {
@@ -304,14 +306,16 @@ body {
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
   -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
           box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
+}
+
+#hood:hover {
+  background-color: #f8101d;
 }
 
 #nightwing {
@@ -320,14 +324,16 @@ body {
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
   -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
           box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
+}
+
+#nightwing:hover {
+  background-color: #06c9f5;
 }
 
 #robin {
@@ -336,13 +342,34 @@ body {
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 20px;
-  -webkit-transition: -webkit-box-shadow 1s;
-  transition: -webkit-box-shadow 1s;
-  transition: box-shadow 1s;
-  transition: box-shadow 1s, -webkit-box-shadow 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
   -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
           box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
+}
+
+#robin:hover {
+  background-color: #1ce46b;
+}
+
+.owl {
+  border: solid 2px #bc13fe;
+  border-radius: 15px;
+  background-color: #1d1a1a;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
+}
+
+.owl:hover {
+  background-color: #bc13fe;
 }
 /*# sourceMappingURL=game.css.map */
