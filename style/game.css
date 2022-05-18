@@ -208,7 +208,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #1d1a1a;
+}
+
+h1 {
+  margin-bottom: 70px;
+}
+
+h1 #homepage {
+  text-decoration: none;
+  font-family: 'Yellowtail', serif;
+  color: white;
+  font-size: 42px;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
 }
 
 .container {
@@ -226,8 +242,9 @@ body {
   display: grid;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
-  gap: 10px;
+  gap: 30px;
   margin: 20px 0;
+  padding: 20px;
 }
 
 .btn {
@@ -235,7 +252,7 @@ body {
   border: 1px solid hsl(var(--hue), 100%, 30%);
   background-color: #1d1a1a;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   color: white;
   outline: none;
   font-size: 18px;

@@ -20,9 +20,28 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: rgb(29, 26, 26);
   }
-  
+
+h1{
+  margin-bottom: 70px;
+  #homepage {
+    text-decoration: none;
+    font-family: 'Yellowtail', serif;
+    color: white;
+    font-size: 42px;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+  }
+}
   .container {
     border: solid 3px white;
     width: 800px;
@@ -40,8 +59,9 @@
   .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 10px;
+    gap: 30px;
     margin: 20px 0;
+    padding: 20px;
   }
   
   .btn {
@@ -49,7 +69,7 @@
     border: 1px solid hsl(var(--hue), 100%, 30%);
     background-color: rgb(29, 26, 26);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: white;
     outline: none;
     font-size: 18px;
