@@ -34,6 +34,8 @@
   width: 250px;
   position: relative;
   overflow: hidden;
+  -webkit-animation: rotation-cycles 2s ease infinite 0s;
+          animation: rotation-cycles 2s ease infinite 0s;
 }
 
 .outer-circle {
@@ -181,6 +183,36 @@
   }
 }
 
+@-webkit-keyframes rotation-cycles {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  45% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-cycles {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  45% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -224,7 +256,7 @@ h1 #homepage {
   font-family: 'Yellowtail', serif;
   color: white;
   font-size: 42px;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #bc13fe, 0 0 42px #bc13fe, 0 0 82px #bc13fe, 0 0 92px #bc13fe, 0 0 102px #bc13fe, 0 0 151px #bc13fe;
 }
 
 .container {
@@ -269,12 +301,109 @@ h1 #homepage {
   cursor: pointer;
 }
 
+.batgirl {
+  border: solid 2px #ffcd00;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
+          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
+}
+
+.batgirl:hover {
+  background-color: #ffcd00;
+}
+
+.hood {
+  border: solid 2px #f8101d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
+          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
+}
+
+.hood:hover {
+  background-color: #f8101d;
+}
+
+.nightwing {
+  border: solid 2px #06c9f5;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
+          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
+}
+
+.nightwing:hover {
+  background-color: #06c9f5;
+}
+
+.robin {
+  border: solid 2px #1ce46b;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
+          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
+}
+
+.robin:hover {
+  background-color: #1ce46b;
+}
+
+.owl {
+  border: solid 2px white;
+  border-radius: 15px;
+  background-color: #1d1a1a;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem white, 0 0 0.8rem white, 0 0 1.8rem white, inset 0 0 0.3rem white;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem white, 0 0 0.8rem white, 0 0 1.8rem white, inset 0 0 0.3rem white;
+}
+
+.owl:hover {
+  background-color: white;
+}
+
 .btn.correct {
   color: white;
 }
 
 .btn.wrong {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   color: white;
+  border: white;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem white, 0 0 0.8rem white, 0 0 1.8rem white, inset 0 0 0.3rem white;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem white, 0 0 0.8rem white, 0 0 1.8rem white, inset 0 0 0.3rem white;
+  background-color: white;
 }
 
 .start-btn, .next-btn {
@@ -297,96 +426,5 @@ h1 #homepage {
 
 .hide {
   display: none;
-}
-
-#batgirl {
-  border: solid 2px #ffcd00;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #ffcd00, 0 0 0.8rem #ffcd00, 0 0 1.8rem #ffcd00, inset 0 0 0.3rem #ffcd00;
-}
-
-#batgirl:hover {
-  background-color: #ffcd00;
-}
-
-#hood {
-  border: solid 2px #f8101d;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #f8101d, 0 0 0.8rem #f8101d, 0 0 1.8rem #f8101d, inset 0 0 0.3rem #f8101d;
-}
-
-#hood:hover {
-  background-color: #f8101d;
-}
-
-#nightwing {
-  border: solid 2px #06c9f5;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #06c9f5, 0 0 0.8rem #06c9f5, 0 0 1.8rem #06c9f5, inset 0 0 0.3rem #06c9f5;
-}
-
-#nightwing:hover {
-  background-color: #06c9f5;
-}
-
-#robin {
-  border: solid 2px #1ce46b;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 20px;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-  -webkit-box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
-          box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #1ce46b, 0 0 0.8rem #1ce46b, 0 0 1.8rem #1ce46b, inset 0 0 0.3rem #1ce46b;
-}
-
-#robin:hover {
-  background-color: #1ce46b;
-}
-
-.owl {
-  border: solid 2px #bc13fe;
-  border-radius: 15px;
-  background-color: #1d1a1a;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1a1a), to(rgba(255, 255, 255, 0)));
-  background-image: linear-gradient(#1d1a1a, rgba(255, 255, 255, 0));
-  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
-          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 1rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 0.3rem #bc13fe;
-}
-
-.owl:hover {
-  background-color: #bc13fe;
 }
 /*# sourceMappingURL=game.css.map */

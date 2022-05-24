@@ -26,6 +26,7 @@
     width:250px;
     position:relative;
     overflow:hidden;
+    animation: rotation-cycles 2s ease infinite 0s;
   }
   
   .outer-circle {
@@ -155,4 +156,18 @@
         opacity: 0;
         visibility: hidden;
     }
+}
+
+@keyframes rotation-cycles {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  45%{
+    transform: rotate(360deg);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
 }

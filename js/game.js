@@ -33,7 +33,6 @@ function showQuestion(question) {
     const button = document.createElement('button')
     button.innerText = answer.text
     button.classList.add('btn')
-    button.setAttribute('id','batgirl')
     if (answer.correct) {
       button.dataset.correct = answer.correct
     }
@@ -43,7 +42,7 @@ function showQuestion(question) {
   heroes = ['batgirl', 'nightwing', 'hood', 'robin']
   items = document.getElementsByClassName("btn")
   for(i = 0; i < items.length; i++){
-      items[i].setAttribute('id', heroes[i])
+      items[i].classList.add(heroes[i])
   }
 }
 

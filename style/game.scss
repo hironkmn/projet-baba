@@ -29,17 +29,17 @@ h1{
   #homepage {
     text-decoration: none;
     font-family: 'Yellowtail', serif;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 42px;
     text-shadow:
       0 0 7px #fff,
       0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #5271ff,
-      0 0 82px #5271ff,
-      0 0 92px #5271ff,
-      0 0 102px #5271ff,
-      0 0 151px #5271ff;
+      0 0 21px #bc13fe,
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #bc13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
   }
 }
   .container {
@@ -86,31 +86,7 @@ h1{
     cursor: pointer;
   }
   
-  .btn.correct {
-    color: white;
-  }
-  
-  .btn.wrong {
-    color: white;
-  }
-  
-  .start-btn, .next-btn {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-  }
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .hide {
-    display: none;
-  }
-
-#batgirl {
+  .batgirl {
     border: solid 2px rgb(255, 205, 0);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
@@ -130,7 +106,7 @@ h1{
                     }
 }
 
-#hood {
+.hood {
     border: solid 2px rgb(248, 16, 29);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
@@ -150,7 +126,7 @@ h1{
                 }
 }
 
-#nightwing {
+.nightwing {
     border: solid 2px rgb(6, 201, 245);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
@@ -170,7 +146,7 @@ h1{
                     }
 }
 
-#robin {
+.robin {
     border: solid 2px rgb(28, 228, 107);
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
@@ -191,7 +167,7 @@ h1{
 }
 
 .owl {
-  border: solid 2px #bc13fe;
+  border: solid 2px white;
   border-radius: 15px;
   background-color: rgb(29, 26, 26);
   font-size: 24px;
@@ -201,12 +177,45 @@ h1{
   background-image: linear-gradient(rgba(29,26,26,1), rgba(255,255,255,0));
   box-shadow: 0 0 .2rem #fff,
                   0 0 .2rem #fff,
-                  0 0 1rem #bc13fe,
-                  0 0 0.8rem #bc13fe,
-                  0 0 1.8rem #bc13fe,
-                  inset 0 0 0.3rem #bc13fe;
+                  0 0 1rem white,
+                  0 0 0.8rem white,
+                  0 0 1.8rem white,
+                  inset 0 0 0.3rem white;
 
                   &:hover{
-                    background-color: #bc13fe;
+                    background-color: white;
                   }
 }
+
+  .btn.correct {
+    color: white;
+  }
+  
+  .btn.wrong {
+    transition: all 1s ease-in-out;
+    color: white;
+    border: white;
+    box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 1rem white,
+                  0 0 0.8rem white,
+                  0 0 1.8rem white,
+                  inset 0 0 0.3rem white;
+    background-color: white;
+  }
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
