@@ -34,8 +34,8 @@
   width: 250px;
   position: relative;
   overflow: hidden;
-  -webkit-animation: rotation-cycles 2s ease infinite 0s;
-          animation: rotation-cycles 2s ease infinite 0s;
+  -webkit-animation: rotation-cycles 2.5s ease infinite;
+          animation: rotation-cycles 2.5s ease infinite;
 }
 
 .outer-circle {
