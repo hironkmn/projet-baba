@@ -130,6 +130,14 @@ h2 {
   display: none;
 }
 
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .mystere {
   text-decoration: none;
   text-transform: uppercase;
