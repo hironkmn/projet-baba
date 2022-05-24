@@ -39,6 +39,7 @@ h2 {
     letter-spacing: 0.4em;
     animation: glitch-skew 0.5s infinite linear alternate-reverse;
   }
+  
   .glitch::after {
     content: attr(data-text);
     position: absolute;
@@ -122,6 +123,9 @@ h2 {
         }
 }
 
+#secret {
+  display: none;
+}
 
 .mystere {
     text-decoration: none;
@@ -129,13 +133,20 @@ h2 {
     border: 0.2rem solid lightgreen;
     border-radius: 2rem;
     padding: 0.4em;
+    transition: all 2s 4s ease-in-out;
     box-shadow: 0 0 .2rem #fff,
                     0 0 .2rem #fff,
                     0 0 2rem green,
                     0 0 0.8rem green,
                     0 0 2.8rem green,
                     inset 0 0 1.3rem green;
-}
+    &:hover #point{
+      display: none;
+    }
+    &:hover #secret {
+      display: block;
+    }
+  }
 
 @keyframes pulsate-1 {
     

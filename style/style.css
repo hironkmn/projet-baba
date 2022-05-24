@@ -126,14 +126,28 @@ h2 {
   background-color: #bc13fe;
 }
 
+#secret {
+  display: none;
+}
+
 .mystere {
   text-decoration: none;
   text-transform: uppercase;
   border: 0.2rem solid lightgreen;
   border-radius: 2rem;
   padding: 0.4em;
+  -webkit-transition: all 2s 4s ease-in-out;
+  transition: all 2s 4s ease-in-out;
   -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
           box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+}
+
+.mystere:hover #point {
+  display: none;
+}
+
+.mystere:hover #secret {
+  display: block;
 }
 
 @-webkit-keyframes pulsate-1 {
