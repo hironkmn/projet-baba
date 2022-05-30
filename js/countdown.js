@@ -16,7 +16,7 @@
     
     today = mm + "/" + dd + "/" + yyyy;
     if (today > birthday) {
-      birthday = dayMonth + nextYear;
+      birthday = new Date('June 03, 2022 21:00:00')
     }
     //end
     
@@ -33,7 +33,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
+            document.getElementById("headline").innerText = "C'est l'heure dududududududu dueeeeel!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
