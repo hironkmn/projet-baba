@@ -12,7 +12,7 @@
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "06/03/",
-        birthday = new Date('June 03, 2022 21:00:00');
+        birthday = new Date('May 30, 2022 14:09:00');
     
     today = mm + "/" + dd + "/" + yyyy;
     if (today > birthday) {
@@ -33,7 +33,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "C'est l'heure dududududududu dueeeeel!";
+            document.getElementById("headline").innerText = "https://hironkmn.github.io/projet-baba/index.html";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
