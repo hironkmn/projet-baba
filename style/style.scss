@@ -25,7 +25,6 @@ h1 {
       0 0 92px #d1c750,
       0 0 102px #d1c750,
       0 0 151px #d1c750;
-    animation: pulsate-2 1.5s infinite alternate;
 }
 
 h2 {
@@ -107,7 +106,6 @@ h2 {
         0 0 92px #bc13fe,
         0 0 102px #bc13fe,
         0 0 151px #bc13fe;
-        animation: pulsate-1 1.5s infinite alternate;  
         border: 0.2rem solid #fff;
         border-radius: 2rem;
         padding: 0.4em;
@@ -120,6 +118,10 @@ h2 {
         &:hover{
             cursor: pointer;
             background-color: #bc13fe;
+        }
+        
+        .material-symbols-outlined{
+          font-size: 28px;
         }
 }
 
@@ -155,68 +157,6 @@ li {
       display: block;
     }
   }
-
-@keyframes pulsate-1 {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #bc13fe,
-      0 0 45px #bc13fe,
-      0 0 55px #bc13fe,
-      0 0 70px #bc13fe,
-      0 0 80px #bc13fe;
-  
-  }
-}
-
-@keyframes pulsate-2 {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #d1c750,
-        0 0 80px #d1c750,
-        0 0 90px #d1c750,
-        0 0 100px #d1c750,
-        0 0 150px #d1c750;
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #d1c750,
-      0 0 45px #d1c750,
-      0 0 55px #d1c750,
-      0 0 70px #d1c750,
-      0 0 80px #d1c750;
-  
-  }
-}
 
 @keyframes glitch-anim {
     0% {
