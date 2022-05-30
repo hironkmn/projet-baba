@@ -54,6 +54,7 @@
     letter-spacing: .125rem;
     text-transform: uppercase;
     color: #fff;
+    padding: 15px;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -138,4 +139,52 @@
       0 0 80px #bc13fe;
   
   }
+}
+
+#batgirl {
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px rgb(255, 205, 0),
+  0 0 22px rgb(255, 205, 0),
+  0 0 32px rgb(255, 205, 0),
+  0 0 42px rgb(255, 205, 0),
+  0 0 52px rgb(255, 205, 0),
+  0 0 52px rgb(255, 205, 0);
+}
+
+#hood {
+  text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px red,
+        0 0 22px red,
+        0 0 32px red,
+        0 0 42px red,
+        0 0 52px red,
+        0 0 52px red;
+}
+
+#nightwing {
+  text-shadow:
+                  0 0 7px #fff,
+                  0 0 10px #fff,
+                  0 0 21px rgb(6, 201, 245),
+                  0 0 22px rgb(6, 201, 245),
+                  0 0 32px rgb(6, 201, 245),
+                  0 0 42px rgb(6, 201, 245),
+                  0 0 52px rgb(6, 201, 245),
+                  0 0 52px rgb(6, 201, 245);
+}
+
+#robin {
+  text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px rgb(28, 228, 107),
+        0 0 22px rgb(28, 228, 107),
+        0 0 32px rgb(28, 228, 107),
+        0 0 42px rgb(28, 228, 107),
+        0 0 52px rgb(28, 228, 107),
+        0 0 52px rgb(28, 228, 107);
 }
