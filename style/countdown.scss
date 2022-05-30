@@ -38,7 +38,6 @@
   h1 {
     font-weight: normal;
     letter-spacing: .125rem;
-    text-transform: uppercase;
     color: #fff;
     padding: 15px;
     text-shadow:
@@ -80,10 +79,6 @@
   li span {
     display: block;
     font-size: 4.5rem;
-  }
-
-  .headline {
-    text-transform: none;
   }
   
   @media all and (max-width: 768px) {
