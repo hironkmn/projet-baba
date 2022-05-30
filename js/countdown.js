@@ -12,7 +12,7 @@
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
         dayMonth = "06/03/",
-        birthday = dayMonth + yyyy;
+        birthday = new Date('June 03, 2022 21:00:00');
     
     today = mm + "/" + dd + "/" + yyyy;
     if (today > birthday) {
