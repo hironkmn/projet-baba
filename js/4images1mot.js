@@ -19,10 +19,10 @@ let imgs = ["./images/bat.jpg",
         let input = document.getElementById("inpu");
         input.addEventListener("keypress",function(){
             if (event.key === "Enter") {
-                event.preventDefault()
-                event.currentTarget.value = ""
                 let img = document.getElementById("img")
                 let inpu = document.getElementById("inpu").value;
+                event.preventDefault()
+                event.currentTarget.value = ""
                 if(inpu == data[num]){
                     num++;
                     sco++;
@@ -65,7 +65,7 @@ let imgs = ["./images/bat.jpg",
                 h1.style.display = "block";
                 sco = sco - 3;
             }else(
-                alert("you score must be greater then 3")
+                alert("Il faut que tu aies au moins 3 points bg !")
             )
         })
         // get data from local storage
