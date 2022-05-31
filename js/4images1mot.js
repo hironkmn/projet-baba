@@ -19,6 +19,8 @@ let imgs = ["./images/bat.jpg",
         let input = document.getElementById("inpu");
         input.addEventListener("keypress",function(){
             if (event.key === "Enter") {
+                event.preventDefault()
+                event.currentTarget.value = ""
                 let img = document.getElementById("img")
                 let inpu = document.getElementById("inpu").value;
                 if(inpu == data[num]){
