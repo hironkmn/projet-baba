@@ -19,12 +19,14 @@ header .material-symbols-outlined {
 .container {
   color: white;
   background-color: #1d1a1a;
-  height: 100vh;
+  height: 94vh;
   width: 100%;
   text-align: center;
+  overflow-y: hidden;
+  bottom: 0;
+  top: 0;
 }
 
-overflow-y:unset
 .container::before {
   content: " ";
   display: block;
@@ -38,6 +40,7 @@ overflow-y:unset
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
+  overflow-y: hidden;
 }
 
 .img1 {
@@ -92,7 +95,7 @@ h1 {
 #input {
   height: 30px;
   border-radius: 20px;
-  border: white 2px solid;
+  border: lightgreen 2px solid;
   outline: none;
   text-align: center;
   font-family: "Inconsolata", serif;
@@ -100,7 +103,7 @@ h1 {
   font-size: 18px;
   margin-top: 20px;
   background-color: #1d1a1a;
-  color: white;
+  color: lightgreen;
   -webkit-transition: ease-out 0.5s;
   transition: ease-out 0.5s;
   -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
