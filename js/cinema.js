@@ -91,19 +91,21 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: "En quelle année débute l'histoire de Stranger Things?",
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: '1981', correct: true },
+      { text: '1983', correct: false },
+      { text: '1985', correct: false },
+      { text: '1987', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: "Quel film se partage les mêmes créateurs que la série Sense 8 ?",
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Interstellar', correct: false },
+      { text: 'Matrix', correct: true },
+      { text: 'Scream', correct: false },
+      { text: 'Mad Max', correct: false }
     ]
   },
   {

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(29, 26, 26);
+
+    .material-symbols-outlined {
+        font-size: 42px;
+        color: lightgreen;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+.container{
+    color: white;
+    background-color: rgb(29, 26, 26);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    overflow-y:unset
+    &::before{
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+    }
+}
+
+.img1{
+    display: flex;
+    justify-content: center;
+
+    .material-symbols-outlined {
+        font-size: 72px;
+        color: lightgreen;
+    }
+}
+.img2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h1 {
+    position: relative;
+    color: lightgreen;
+    letter-spacing: 0.4em;
+    font-family: "Inconsolata", serif;
+}
+
+.buttons{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 2px 6px 7px gray;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+.setting{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+}
+#input{
+    height: 30px;
+    border-radius: 20px;
+    border: white 2px solid;
+    outline: none;
+    text-align: center;
+    font-family: "Inconsolata", serif;
+    letter-spacing: 1.6px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: rgb(29, 26, 26);;
+    color: white;
+    transition: ease-out 0.5s;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem green,
+              0 0 0.8rem green,
+              0 0 2.8rem green,
+              inset 0 0 1.3rem green;
+}
+
+footer {
+    background-color: rgb(29, 26, 26);
+}

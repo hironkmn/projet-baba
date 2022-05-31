@@ -9,23 +9,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Le BaptQuiz</title>
 </head>
 <body>
+    <header>
+        <a href="index.html"><span class="material-symbols-outlined">home</span></a>
+    </header>
     <div class="container">
         <br>
         <br><br>
         <div class="img1">
-        <img src="./images/word.png" alt="" id="img1" width="15%">
+            <span class="material-symbols-outlined">question_mark</span>
         </div>
         <br><br>
         <h1>
-            4 Pics 1 Word answers
+            4 Images 1 Mot
         </h1>
         <br>
         <div class="setting">
-        <input type="text" id="input" placeholder="Enter your name">
-        <br>
-        <button class="buttons" id="start">Start</button>
+        <input type="text" id="input" placeholder="Entre ton pseudo">
     </div>
+    <footer></footer>
+    <script>
+        var input = document.getElementById("input");
+        input.addEventListener("keypress", function(){
+            if (event.key === "Enter"){
+                let inputValue = document.getElementById("input").value;
+                localStorage.setItem('player',inputValue)
+                window.location.replace('4images1mot/game.html')
+            }
+        })
+    </script>
 </body>
 </html>

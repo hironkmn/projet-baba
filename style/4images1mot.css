@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #1d1a1a;
+}
+
+header .material-symbols-outlined {
+  font-size: 42px;
+  color: lightgreen;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.container {
+  color: white;
+  background-color: #1d1a1a;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+overflow-y:unset
+.container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img1 .material-symbols-outlined {
+  font-size: 72px;
+  color: lightgreen;
+}
+
+.img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+h1 {
+  position: relative;
+  color: lightgreen;
+  letter-spacing: 0.4em;
+  font-family: "Inconsolata", serif;
+}
+
+.buttons {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 2px 6px 7px gray;
+          box-shadow: 2px 6px 7px gray;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.setting {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  justify-items: center;
+}
+
+#input {
+  height: 30px;
+  border-radius: 20px;
+  border: white 2px solid;
+  outline: none;
+  text-align: center;
+  font-family: "Inconsolata", serif;
+  letter-spacing: 1.6px;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #1d1a1a;
+  color: white;
+  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+}
+
+footer {
+  background-color: #1d1a1a;
+}
+/*# sourceMappingURL=4images1mot.css.map */
