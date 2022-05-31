@@ -109,19 +109,75 @@ const questions = [
     ]
   },
   {
-    question: 'Is web development fun?',
+      question: "Sur quelle planète Luke est-il parti pour apprendre à devenir un véritable Jedi ?",
+      answers: [
+        { text: 'Coruscant', correct: false },
+        { text: 'Mustafar', correct: false },
+        { text: 'Naboo', correct: false },
+        { text: 'Dagobah', correct: true }
+      ]
+  },
+  {
+    question: "Quel est le second film Disney juste après Blanche Neige ?",
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: false },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: true }
+      { text: 'Cendrillon', correct: false },
+      { text: 'Pinocchio', correct: true },
+      { text: 'Peter Pan', correct: false },
+      { text: 'Alice au pays des merveilles ', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: "De quel film provient cette OST ?",
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Little Miss Sunshine', correct: false },
+      { text: 'The Dark Knight', correct: false },
+      { text: 'Blade Runner 2049', correct: false },
+      { text: 'Dune', correct: true }
+    ]
+  },
+  {
+    question: "Dans retour vers le futur 2, quelle invention découvrent les héros ?",
+    answers: [
+      { text: 'Les toilettes connectés', correct: false },
+      { text: 'les trotinettes électrique', correct: false },
+      { text: 'Le cinéma 3D', correct: true },
+      { text: 'Le Smartphone', correct: false }
+    ]
+  },
+  {
+    question: "Dans quel film américain Donald Trump joue-t-il son propre rôle ?",
+    answers: [
+      { text: "Chérie j'ai rétréci les gosses", correct: false },
+      { text: "Maman, j'ai encore raté l'avion", correct: true },
+      { text: "La nuit au musée", correct: true },
+      { text: "Les Gremlins", correct: false }
+    ]
+  },
+  {
+    question: "Quel film raconte l’histoire d’un jeune homme qui va devenir tailleur de haie et coiffeur ?",
+    answers: [
+      { text: "Charlie et la chocolaterie", correct: false },
+      { text: "Edward aux mains d'argent", correct: true },
+      { text: "Forrest Gump", correct: false },
+      { text: "Django Unchained", correct: false }
+    ]
+  },
+  {
+    question: "Katy Perry, Britney Spears, Jennifer Lopez, Enrique Iglesias ou encore Mike Tyson apparaissent dans des épisodes de…",
+    answers: [
+      { text: "Friends", correct: false },
+      { text: "Brooklyn Nine Nine", correct: false },
+      { text: "The Office", correct: false },
+      { text: "How I met your Mother", correct: true }
+    ]
+  },
+  {
+    question: "Quelle est la série la plus téléchargé illégalement?",
+    answers: [
+      { text: "Game Of Thrones", correct: true },
+      { text: "The Walking Dead", correct: false },
+      { text: "Breaking Bad", correct: false },
+      { text: "Arcane", correct: false }
     ]
   }
 ]
