@@ -149,7 +149,7 @@ const questions = [
     answers: [
       { text: "Chérie j'ai rétréci les gosses", correct: false },
       { text: "Maman, j'ai encore raté l'avion", correct: true },
-      { text: "La nuit au musée", correct: true },
+      { text: "La nuit au musée", correct: false },
       { text: "Les Gremlins", correct: false }
     ]
   },
