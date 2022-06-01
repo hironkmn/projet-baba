@@ -288,6 +288,7 @@ h1 #homepage {
   color: white;
   outline: none;
   font-size: 18px;
+  text-decoration: none;
 }
 
 #question {
@@ -374,6 +375,7 @@ h1 #homepage {
 }
 
 .owl {
+  text-decoration: none;
   border: solid 2px white;
   border-radius: 15px;
   background-color: #1d1a1a;

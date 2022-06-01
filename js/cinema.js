@@ -70,7 +70,8 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Relancer le BaptQuiz ?'
+    startButton.innerText = 'Retourner au menu ?'
+    startButton.href = '../menu.html'
     startButton.classList.remove('hide')
   }
 }

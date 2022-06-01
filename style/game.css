@@ -79,6 +79,7 @@ li {
   -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
           box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
   cursor: pointer;
+  vertical-align: bottom;
 }
 
 .effect-1 {
