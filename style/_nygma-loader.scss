@@ -45,17 +45,17 @@
   .outer-circle {
     position:absolute;
     height:130px;
-    width:230px;
+    width:235px;
     border-radius:50%;
     border:6px solid lightgreen;
-    background: rgb(29, 26, 26);
-    top:3px;
+    background: lightgreen;
+    top:0px;
     left:4px;
     overflow:hidden;
   }
   
   .bat {
-    background:rgb(29, 26, 26);
+    background:lightgreen;
     position:absolute;
     height:112px;
     width:213px;
@@ -166,13 +166,13 @@
   
   .trapezoid {
     top: 0px;
-    left:95px;
+    left:97px;
     position:absolute;
       border-bottom: 12px solid rgb(29, 26, 26);
-      border-left: 10px solid lightgreen;
-      border-right: 10px solid lightgreen;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
       height: 0;
-      width: 23px;
+      width: 20px;
     transform: rotate(180deg);
   }
 
