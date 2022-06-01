@@ -33,7 +33,7 @@
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "Restez sur le stream de Baba, ça arrive...";
+            document.getElementById("headline").innerText = "https://hironkmn.github.io/projet-baba/index.html";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
             clearInterval(x);
