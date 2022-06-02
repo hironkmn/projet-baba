@@ -92,35 +92,93 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: "Quel jeu Zelda sépare la timeline en 3 ? ",
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: "Majora's Mask", correct: false },
+      { text: "Ocarina of Time", correct: true },
+      { text: "Skyward Sword", correct: false },
+      { text: "Link's Awakening", correct: false }
     ]
-  },
-  {
-    question: 'Who is the best YouTuber?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
-    ]
-  },
-  {
-    question: 'Is web development fun?',
-    answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: false },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: true }
-    ]
-  },
-  {
-    question: 'What is 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
-    ]
-  }
+},
+{
+  question: "Quel est le nom de la map zombie de Call of Duty qui se passe dans un théatre ? ",
+  answers: [
+    { text: "Verruckt", correct: false },
+    { text: "Call of the dead", correct: false },
+    { text: "Shi no numa", correct: false },
+    { text: "Kino Der Toten", correct: true }
+  ]
+},
+{
+  question: "L'idée de base de The Last of Us a été développé après que ses créateurs ont vue : ",
+  answers: [
+    { text: "Un documentaire  sur les fourmis", correct: true },
+    { text: "Un documentaire apocalypse sur la guerre", correct: false },
+    { text: "Un documentaire sur l’impact écologique de l’Homme", correct: false },
+    { text: "Un documentaire sur les différentes espèce de champignon", correct: false }
+  ]
+},
+{
+  question: "Red dead Redemption fait suite à quel jeu ? ",
+  answers: [
+    { text: "Red Dead Colt", correct: false },
+    { text: "Red Dead West", correct: false },
+    { text: "Red Dead Revolver", correct: true },
+    { text: "Red Dead Imagination", correct: false }
+  ]
+},
+{
+  question: "Le créateur de Zelda a donné ce nom à cette princesse car : ",
+  answers: [
+    { text: "Sa fille se nomme Zelda", correct: false },
+    { text: "Il voulait rendre hommage à la femme d'un auteur", correct: true },
+    { text: "Sa mère s'appelait Zelda", correct: false },
+    { text: "Il avait juste envie comme ça sonnait bien", correct: false }
+  ]
+},
+{
+  question: "Quel est le nom de la ville sous marine dans Bioshock ? ",
+  answers: [
+    { text: "Colombia", correct: false },
+    { text: "Aquatic", correct: false },
+    { text: "Rapture", correct: true },
+    { text: "Lav'O Baleine", correct: false }
+  ]
+},
+{
+  question: "Combien d'enfants à Bowser ",
+  answers: [
+    { text: "6", correct: false },
+    { text: "7", correct: false },
+    { text: "8", correct: true },
+    { text: "9", correct: false }
+  ]
+},
+{
+  question: "Quel est le nom de l'ennemi juré du Professeur Layton dans la 1er trilogie ",
+  answers: [
+    { text: "Don paolo", correct: true },
+    { text: "Don Pablo Picasso", correct: false },
+    { text: "Don Pedro", correct: false },
+    { text: "Don parmigiano", correct: false }
+  ]
+},
+{
+  question: "Dans God of War de quel dieu Kratos est-il le serviteur avant de se retourner contre lui ? ",
+  answers: [
+    { text: "Hades", correct: false },
+    { text: "Zeus", correct: false },
+    { text: "Ares", correct: true },
+    { text: "Chronos", correct: false }
+  ]
+},
+{
+  question: "Quelle saga n'a jamais eu le droit à son adaptation en jeu LEGO ",
+  answers: [
+    { text: "Le Hobbit", correct: false },
+    { text: "Batman", correct: false },
+    { text: "Jurassic World", correct: false },
+    { text: "Retour vers le futur", correct: true }
+  ]
+}
 ]
