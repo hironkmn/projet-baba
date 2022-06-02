@@ -92,35 +92,93 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: "À quel anime appartient cette réplique : La passion et les rêves sont comme le temps, rien ne peut les arrêter, et il en sera ainsi tant qu'il y aura des hommes prêts à donner un sens au mot Liberté ",
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: "L'attaque des titans", correct: true },
+      { text: "One Piece", correct: false },
+      { text: "Chainsaw Man", correct: false },
+      { text: "Naruto", correct: false }
     ]
-  },
-  {
-    question: 'Who is the best YouTuber?',
-    answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
-    ]
-  },
-  {
-    question: 'Is web development fun?',
-    answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: false },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: true }
-    ]
-  },
-  {
-    question: 'What is 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
-    ]
-  }
+},
+{
+  question: "Dans Jujutsu Kaisen, qui est le seul exorciste vivant à pouvoir presque rivaliser contre Gojo Satoru? ",
+  answers: [
+    { text: "Kento Nanami", correct: false },
+    { text: "Yuta Okkotsu", correct: true },
+    { text: "Maki Zenin", correct: false },
+    { text: "Itadori Yuji", correct: false }
+  ]
+},
+{
+  question: "Quel studio d'animation a révolutionné le monde des animes avec Neon Genesis Evangelion ?",
+  answers: [
+    { text: "Trigger", correct: false },
+    { text: "Mappa", correct: false },
+    { text: "Gainax", correct: true },
+    { text: "Unfotable", correct: false }
+  ]
+},
+{
+  question: " Lequel de ses mangas n'est pas écrit pas un ancien assistant de Fujimoto (Chainsaw Man)",
+  answers: [
+    { text: "Spy x Family", correct: false },
+    { text: "Dandadan", correct: false },
+    { text: "Hell's Paradise", correct: false },
+    { text: "Sakamoto Days", correct: true }
+  ]
+},
+{
+  question: " Lequel de ces animes a le plus d'épisodes Filler ?",
+  answers: [
+    { text: "Naruto Shippuden", correct: false },
+    { text: "Bleach", correct: false },
+    { text: "Detective Conan", correct: true },
+    { text: "Boruto", correct: false }
+  ]
+},
+{
+  question: "Comment s'appelle la mère de Eren Jäger ?",
+  answers: [
+    { text: "Natasha", correct: false },
+    { text: "Nina", correct: false },
+    { text: "Maria", correct: false },
+    { text: "Carla", correct: true }
+  ]
+},
+{
+  question: "Dans Full Metal Alchimist, que sont les Homonculus ? ",
+  answers: [
+    { text: "Des êtres artificiels ayant pour noyau une pierre philosophale", correct: true },
+    { text: "Des mutants", correct: true },
+    { text: "Des alchimistes maudits", correct: false },
+    { text: "wtf ça existe pas les homonculus trop bizarre toi", correct: false }
+  ]
+},
+{
+  question: "Dans quel anime une fille à une obsession malsaine pour un garçon qu'elle surnomme Yuki ? ",
+  answers: [
+    { text: "Another", correct: false },
+    { text: "Erased", correct: false },
+    { text: "Danganronpa", correct: false },
+    { text: "Mirai Nikki", correct: true }
+  ]
+},
+{
+  question: "De quel anime provient cette OST ? ",
+  answers: [
+    { text: "Neon Genesis Evangelion", correct: false },
+    { text: "Devilman Crybaby", correct: true },
+    { text: "Jujutsu Kaisen", correct: false },
+    { text: "Kill la Kill", correct: false }
+  ]
+},
+{
+  question: "De quel manga provient cet opening ? ",
+  answers: [
+    { text: "Mob Psycho 100", correct: true },
+    { text: "Vinland Saga", correct: false },
+    { text: "Fire Force", correct: false },
+    { text: "Bleach", correct: false }
+  ]
+}
 ]
