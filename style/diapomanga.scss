@@ -1,3 +1,5 @@
+@import "freeze-loader";
+
 .img {
     max-width:800px;
     min-height: 400px;
@@ -65,3 +67,100 @@
     
     }
     
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", serif;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(29, 26, 26);
+    width: 100%;
+    list-style-type: none;
+    height: 6vh;
+    color: lightgreen;
+    width: 100%;
+    letter-spacing: 1.2px;
+}
+li{
+    margin-top: 5px;
+    margin-right: 70px;
+    text-decoration: none;
+    a {
+        color: lightgreen;
+    }
+}
+.cont{
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    &::before{
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+    }
+}
+.bottom-area{
+    text-align: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+#img {
+    width: 650px;
+}
+.container{
+    background-color: rgb(29, 26, 26);
+    height: 100vh;
+    width: 100%;
+
+}
+#but1{
+    font-size: 18px;
+    width: 110px;
+    height: 40px;
+    border: lightgreen 2px solid;
+    color: lightgreen;
+    background-color: rgb(29, 26, 26);
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem green,
+              0 0 0.8rem green,
+              0 0 2.8rem green,
+              inset 0 0 1.3rem green;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.effect-1{
+    height: 40px;
+    border: lightgreen 2px solid;
+    color: lightgreen;
+    font-size: 18px;
+    margin-left: 10px;
+    background-color: rgb(29, 26, 26);
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem green,
+              0 0 0.8rem green,
+              0 0 2.8rem green,
+              inset 0 0 1.3rem green;
+    vertical-align: baseline;
+}

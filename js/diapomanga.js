@@ -122,15 +122,6 @@ function affichage(n) {
             
         }
         // hint logic
-        let but1 = document.getElementById("but1");
-        but1.addEventListener("click",function(){
-            if(sco >= 3){
-                h1.style.display = "block";
-                sco = sco - 3;
-            }else(
-                alert("Il faut que tu aies au moins 3 points bg !")
-            )
-        })
         // get data from local storage
         let play = document.getElementById("play");
         let rel = localStorage.getItem('player');

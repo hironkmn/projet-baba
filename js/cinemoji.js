@@ -8,7 +8,7 @@ let imgs = ["../images/cinemoji/supersizeme.png",
               "../images/cinemoji/breakingbad.png",
               "../images/cinemoji/odyseedepi.png",
               "../images/cinemoji/sherlock.png",
-              "../images/cinemoji/strangerthings.png",]
+              "../images/cinemoji/strangerthings.png"]
         
         let num = 0;
         let sco = 0;
@@ -59,15 +59,6 @@ let imgs = ["../images/cinemoji/supersizeme.png",
             
         }
         // hint logic
-        let but1 = document.getElementById("but1");
-        but1.addEventListener("click",function(){
-            if(sco >= 3){
-                h1.style.display = "block";
-                sco = sco - 3;
-            }else(
-                alert("Il faut que tu aies au moins 3 points bg !")
-            )
-        })
         // get data from local storage
         let play = document.getElementById("play");
         let rel = localStorage.getItem('player');

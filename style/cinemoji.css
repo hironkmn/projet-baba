@@ -1,1 +1,350 @@
-/* No CSS *//*# sourceMappingURL=cinemoji.css.map */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: #1d1a1a;
+  overflow: hidden;
+  -webkit-animation: disapear 1s ease;
+          animation: disapear 1s ease;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loader-container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.board {
+  height: 150px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: rotation-cycles 2.5s ease infinite;
+          animation: rotation-cycles 2.5s ease infinite;
+}
+
+.outer-circle {
+  position: absolute;
+  height: 130px;
+  width: 235px;
+  border-radius: 50%;
+  border: 6px solid green;
+  background: #1d1a1a;
+  top: 0px;
+  left: 4px;
+  overflow: hidden;
+}
+
+.bat {
+  background: green;
+  position: absolute;
+  height: 112px;
+  width: 216px;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem lightgreen, 0 0 0.8rem lightgreen, 0 0 2.8rem lightgreen, inset 0 0 1.3rem lightgreen;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem lightgreen, 0 0 0.8rem lightgreen, 0 0 2.8rem lightgreen, inset 0 0 1.3rem lightgreen;
+}
+
+.sphere-1 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 70px;
+  width: 33px;
+  border-radius: 50%;
+  top: 67px;
+  left: 44px;
+  -webkit-transform: rotate(-41deg);
+          transform: rotate(-41deg);
+  border: 4px solid green;
+}
+
+.sphere-2 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 70px;
+  width: 38px;
+  border-radius: 50%;
+  top: 73px;
+  left: 68px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  border-top: 4px solid green;
+  border-right: 4px solid green;
+}
+
+.sphere-3 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 70px;
+  width: 33px;
+  border-radius: 50%;
+  top: 67px;
+  right: 44px;
+  -webkit-transform: rotate(41deg);
+          transform: rotate(41deg);
+  border: solid 4px green;
+}
+
+.sphere-4 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 70px;
+  width: 38px;
+  border-radius: 50%;
+  top: 73px;
+  right: 68px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border-top: 4px solid green;
+  border-left: 4px solid green;
+}
+
+.sphere-5 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 40px;
+  width: 37px;
+  border-radius: 50%;
+  top: 0px;
+  left: 57px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border: 4px solid green;
+}
+
+.sphere-6 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 40px;
+  width: 37px;
+  border-radius: 50%;
+  top: 0px;
+  right: 57px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border: 4px solid green;
+}
+
+.square-1 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0px;
+  left: 74px;
+  border-right: 4px solid green;
+}
+
+.square-2 {
+  background: #1d1a1a;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0px;
+  right: 74px;
+  border-left: 4px solid green;
+}
+
+.trapezoid {
+  top: 0px;
+  left: 97px;
+  position: absolute;
+  border-bottom: 12px solid #1d1a1a;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  height: 0;
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@-webkit-keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes rotation-cycles {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  45% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-cycles {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  45% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inconsolata", serif;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #1d1a1a;
+  width: 100%;
+  list-style-type: none;
+  height: 6vh;
+  color: lightgreen;
+  width: 100%;
+  letter-spacing: 1.2px;
+}
+
+li {
+  margin-top: 5px;
+  margin-right: 70px;
+  text-decoration: none;
+}
+
+li a {
+  color: lightgreen;
+}
+
+.cont {
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+}
+
+.cont::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.bottom-area {
+  text-align: center;
+}
+
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#img {
+  width: 650px;
+}
+
+.container {
+  background-color: #1d1a1a;
+  height: 100vh;
+  width: 100%;
+}
+
+#but1 {
+  font-size: 18px;
+  width: 110px;
+  height: 40px;
+  border: lightgreen 2px solid;
+  color: lightgreen;
+  background-color: #1d1a1a;
+  border-radius: 10px;
+  outline: none;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.effect-1 {
+  height: 40px;
+  border: lightgreen 2px solid;
+  color: lightgreen;
+  font-size: 18px;
+  margin-left: 10px;
+  background-color: #1d1a1a;
+  border-radius: 10px;
+  outline: none;
+  text-align: center;
+  -webkit-box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+          box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem green, 0 0 0.8rem green, 0 0 2.8rem green, inset 0 0 1.3rem green;
+  vertical-align: baseline;
+}
+/*# sourceMappingURL=cinemoji.css.map */
