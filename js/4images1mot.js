@@ -1,14 +1,14 @@
-let data = ["bat","can","tip","fan","hit","new","oak","sad","tie","joy"]
-let imgs = ["./images/bat.jpg",
-              "./images/can.png",
-              "./images/tip.jpg",
-              "./images/fan.jpg",
-              "./images/hit.jpg",
-              "./images/new (1).jpg",
-              "./images/oak.jpg",
-              "./images/sad.jpg",
-              "./images/tie.jpg",
-              "./images/joy.jpg",]
+let data = ["Katana Zero","Bloons TD","Celeste","Dead by Daylight","Hitman","Mass Effect","Team Fortress","Death Stranding","Cuphead","Journey To The Savage Planet"]
+let imgs = ["../images/4images1jeu/katanazero.png",
+              "../images/4images1jeu/bloonstd.png",
+              "../images/4images1jeu/celeste.png",
+              "../images/4images1jeu/dbd.png",
+              "../images/4images1jeu/hitman.png",
+              "../images/4images1jeu/masseffect.png",
+              "../images/4images1jeu/teamfortress.png",
+              "../images/4images1jeu/deathstranding.png",
+              "../images/4images1jeu/cuphead.png",
+              "../images/4images1jeu/journeytothesavageplanet.png",]
         
         let num = 0;
         let sco = 0;
@@ -23,7 +23,7 @@ let imgs = ["./images/bat.jpg",
                 let inpu = document.getElementById("inpu").value;
                 event.preventDefault()
                 event.currentTarget.value = ""
-                if(inpu == data[num]){
+                if(inpu == data[num] || inpu == data[num].toLowerCase()){
                     num++;
                     sco++;
                     end++;

@@ -61,6 +61,10 @@ li {
           justify-content: center;
 }
 
+#img {
+  width: 650px;
+}
+
 .container {
   background-color: #1d1a1a;
   height: 100vh;
