@@ -8,7 +8,8 @@ let imgs = ["../images/4images1jeu/katanazero.png",
               "../images/4images1jeu/teamfortress.png",
               "../images/4images1jeu/deathstranding.png",
               "../images/4images1jeu/cuphead.png",
-              "../images/4images1jeu/journeytothesavageplanet.png",]
+              "../images/4images1jeu/journeytothesavageplanet.png"
+            ]
         
         let num = 0;
         let sco = 0;
@@ -31,6 +32,8 @@ let imgs = ["../images/4images1jeu/katanazero.png",
                     img.src = imgs[num];
                     score.innerHTML = sco;
                     console.log(end)
+                }else if(end == 9){
+                    but.innerHTML = "Get result";
                 }else if(end == 10){
                 let win = document.getElementById("win");
                 win.innerHTML = rel + "<br>" + "Félicitations !"+ "<br>" + "Score total: " + sco + "<br>" + "Temps écoulé : " + count;

@@ -229,13 +229,13 @@ li {
 
 .freeze {
   text-decoration: none;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   text-align: center;
   position: relative;
   color: white;
   border-radius: 20px;
   height: 75.19px;
-  line-height: 15px;
+  line-height: 20px;
   background: rgba(56, 215, 243, 0.5);
   -webkit-transition: background 0.15s ease-in-out;
   transition: background 0.15s ease-in-out;
